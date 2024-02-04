@@ -12,16 +12,27 @@ const Header = () => {
       <nav className="h-16 flex justify-center items-center">
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink className="hidden sm:block" to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/leistungen">Leistungen</NavLink>
+            <NavLink className="hidden sm:block" to="/leistungen">
+              Leistungen
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/impressium">Impressium</NavLink>
+            <NavLink className="hidden sm:block" to="/impressium">
+              Impressium
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/kontakt">Kontakt</NavLink>
+            <NavLink className="hidden sm:block" to="/kontakt">
+              Kontakt
+            </NavLink>
+          </li>
+          <li>
+            <input className="sm:hidden" type="checkbox" />
           </li>
         </ul>
       </nav>
