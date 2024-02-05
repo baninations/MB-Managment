@@ -6,13 +6,21 @@ const Contact = (props) => {
     window.location.href = `${props.type} ${props.contactType}`;
   };
   return (
-    <Button className="" onClick={handleCallClick} pill>
+    <button
+      className="border-2 text-center h-28 w-72 bg-green-500 rounded-3xl text-white"
+      onClick={handleCallClick}
+    >
       {props.message}
-    </Button>
+    </button>
+    // <Button className="" onClick={handleCallClick} pill>
+    //   {props.message}
+    // </Button>
   );
 };
 
 export default Contact;
+
+//////////////////////////////////////
 
 // return (
 //     <>

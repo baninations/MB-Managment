@@ -3,7 +3,7 @@ import ContactForm from "../../components/contact-form/ContactForm";
 
 const Kontakt = () => {
   return (
-    <div className="m-10 flex justify-center">
+    <div className="m-32 flex justify-center">
       <div className="contactUsStyle">
         <h1 className="text-2xl mb-6">Kontaktieren Sie uns</h1>
         <p>
@@ -12,9 +12,9 @@ const Kontakt = () => {
         </p>
 
         <div className="mb-10">
-          <h1 className="text-2xl mb-6">Kontakt Information</h1>
+          <h1 className="text-2xl mt-10 mb-6">Kontakt Information</h1>
           <p>Email: info@mb-managment.de</p>
-          <p>Phone: 01725319702</p>
+          <p>Handy: 01725319702</p>
           <p>Address: Nienburg</p>
         </div>
 
