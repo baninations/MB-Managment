@@ -5,6 +5,7 @@ import Leistungen from "./pages/leistungen/Leistungen";
 import Impressium from "./pages/impressium/Impressium";
 import Kontakt from "./pages/kontakt/Kontakt";
 // import Header from "./header/header";
+// import Footer from "./footer/footer";
 import Footer from "./footer/footer";
 import Home from "./home/Home";
 import Header from "./header/Header";
