@@ -3,6 +3,7 @@ import { Carousel } from "flowbite-react";
 import Contact from "../../components/contact/Contact";
 import itemList from "../../data";
 import List from "../../components/list/List";
+import { FaLongArrowAltDown } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -43,25 +44,32 @@ const Main = () => {
           </p>
           <h1 className="m-10 text-2xl">Kontaktieren sie uns!</h1>
           {/* <p className="mb-10">Arrow downwards</p> */}
-          <div className="flex flex-row pb-10 pl-20 pr-20 justify-between w-screen">
-            <Contact
-              message="01725319702"
-              type="tel:"
-              contactType="01725319702"
-            />
-            <Contact
-              message="mb.managment.h@gmail.com"
-              type="mailto:"
-              contactType="mb.managment.h@gmail.com"
-            />
+          <div>
+            <div className="mb-2 w-screen flex justify-around">
+              <FaLongArrowAltDown />
+              <FaLongArrowAltDown />
+            </div>
+            <div className="w-screen flex justify-around">
+              <Contact
+                message="01725319702"
+                type="tel:"
+                contactType="01725319702"
+              />
+
+              <Contact
+                message="info@mb-managment.de"
+                type="mailto:"
+                contactType="info@mb-managment.de"
+              />
+            </div>
           </div>
-          <p className="text-xl">
+          <p className="mt-10 text-center text-xl">
             Wir schicken Ihnen ein persönliches Angebot.
           </p>
         </div>
         <ul className="mt-10">
           {itemList.map((item) => (
-            <List items={item} />
+            <List key={item} items={item} />
           ))}
         </ul>
       </main>
